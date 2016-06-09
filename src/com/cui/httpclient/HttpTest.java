@@ -26,6 +26,7 @@ import org.apache.log4j.Logger;
 public class HttpTest {
 	private static Logger log = Logger.getLogger(HttpTest.class);
 	
+	@SuppressWarnings("deprecation")
 	public static String post(String url, Map<String, String> params) {
 		DefaultHttpClient httpclient = new DefaultHttpClient();
 		String body = null;
@@ -40,6 +41,7 @@ public class HttpTest {
 		return body;
 	}
 	
+	@SuppressWarnings("deprecation")
 	public static String get(String url) {
 		DefaultHttpClient httpclient = new DefaultHttpClient();
 		String body = null;
@@ -54,6 +56,7 @@ public class HttpTest {
 	}
 		
 	
+	@SuppressWarnings("deprecation")
 	private static String invoke(DefaultHttpClient httpclient,
 			HttpUriRequest httpost) {
 		
